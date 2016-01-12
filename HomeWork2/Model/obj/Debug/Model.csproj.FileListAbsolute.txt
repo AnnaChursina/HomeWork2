@@ -3,3 +3,8 @@ E:\Учеба\Программисты\Программы\HomeWork2\HomeWork2\Mo
 E:\Учеба\Программисты\Программы\HomeWork2\HomeWork2\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
 E:\Учеба\Программисты\Программы\HomeWork2\HomeWork2\Model\obj\Debug\Model.dll
 E:\Учеба\Программисты\Программы\HomeWork2\HomeWork2\Model\obj\Debug\Model.pdb
+E:\Учеба\Программисты\ForGH\HomeWork2\HomeWork2\Model\bin\Debug\Model.dll
+E:\Учеба\Программисты\ForGH\HomeWork2\HomeWork2\Model\bin\Debug\Model.pdb
+E:\Учеба\Программисты\ForGH\HomeWork2\HomeWork2\Model\obj\Debug\Model.dll
+E:\Учеба\Программисты\ForGH\HomeWork2\HomeWork2\Model\obj\Debug\Model.pdb
+E:\Учеба\Программисты\ForGH\HomeWork2\HomeWork2\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache

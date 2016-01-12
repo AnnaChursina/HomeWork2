@@ -1,37 +1,46 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Drawing;
 using System.Linq;
-using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace Model
 {
     public class Driver
     {
+        public int Years;
+        public int Experience1;
+
         public Driver(DateTime licenceDate, string name) //передаем в параметр то, что вводится в консоли
         {
-            LicenceDate = licenceDate;
+            LicenseDate = licenceDate;
             Name = name;
         }
         // свойства
-        public DateTime LicenceDate { get; } // значение licenceDate передается св-ву в конструкторе
+        public int Experience 
+        {
+            get
+            {
+                var now = DateTime.Now;
+                var licensedate = LicenseDate;
+                Years = now.Year - licensedate.Year;
+                return Years;
+            }
+          } 
         public string Name { get; }
-        // лямбда-выраженияе:
-        public int Expirience => DateTime.Now.Year - LicenceDate.Year; // это лямбда-выражение
+        public DateTime LicenseDate { get; } // значение licenceDate передается св-ву в конструкторе
         public string Category { get; set; }
         public Car Car { get; private set; }
+
+        // methode:
         public void OwnCar(Car car) // ссылка на объект
         {
-        // catch NullReferenceExp:
+             //исключение:
             if (Category.Contains(car.Category)) // определяет, все ли элемены есть в списке
             {
                 Car = car; // должно ли быть автоматическое закрепление машины за водителем?
             }
             else
             {
-                Console.WriteLine("Driver has no needed category");
+                throw new Exception("Driver has no received category!");
             }
         }
     }

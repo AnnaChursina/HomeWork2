@@ -6,3 +6,11 @@ E:\Учеба\Программисты\Программы\HomeWork2\HomeWork2\Ho
 E:\Учеба\Программисты\Программы\HomeWork2\HomeWork2\HomeWork2\bin\Debug\Model.pdb
 E:\Учеба\Программисты\Программы\HomeWork2\HomeWork2\HomeWork2\obj\Debug\HomeWork2.exe
 E:\Учеба\Программисты\Программы\HomeWork2\HomeWork2\HomeWork2\obj\Debug\HomeWork2.pdb
+E:\Учеба\Программисты\ForGH\HomeWork2\HomeWork2\HomeWork2\bin\Debug\HomeWork2.exe.config
+E:\Учеба\Программисты\ForGH\HomeWork2\HomeWork2\HomeWork2\obj\Debug\HomeWork2.exe
+E:\Учеба\Программисты\ForGH\HomeWork2\HomeWork2\HomeWork2\obj\Debug\HomeWork2.pdb
+E:\Учеба\Программисты\ForGH\HomeWork2\HomeWork2\HomeWork2\bin\Debug\HomeWork2.exe
+E:\Учеба\Программисты\ForGH\HomeWork2\HomeWork2\HomeWork2\bin\Debug\HomeWork2.pdb
+E:\Учеба\Программисты\ForGH\HomeWork2\HomeWork2\HomeWork2\bin\Debug\Model.dll
+E:\Учеба\Программисты\ForGH\HomeWork2\HomeWork2\HomeWork2\bin\Debug\Model.pdb
+E:\Учеба\Программисты\ForGH\HomeWork2\HomeWork2\HomeWork2\obj\Debug\View.csprojResolveAssemblyReference.cache

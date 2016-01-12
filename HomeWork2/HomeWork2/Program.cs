@@ -19,14 +19,33 @@ namespace HomeWork2
             {
                 Console.WriteLine("Impossible to show driver's name. " +
                                         "It hasn't been specified yet"); }
-            Driver driver1 = new Driver(new DateTime(2006, 12, 04), "Voldemar");
-                driver1.Category = "BC";
-            car1.ChangeOwner(driver1, "o777oo");
-            driver1.Category = driver1.Category.Insert(2,"D"); 
-            driver1.OwnCar(car1);
-            Console.WriteLine(driver1.Car.CarNumber);
-            Console.WriteLine(car1.CarPassport.Owner.Name);
+
+            var driver1 = new Driver(new DateTime(2006, 1, 11), "Voldemar");
+            driver1.Category = "BC";
+            try
+            {
+                car1.ChangeOwner(driver1, "o777oo");
+            }
+            catch (Exception exc)
+            {
+                Console.WriteLine(exc.Message);
+            }
+           
+            driver1.Category = driver1.Category.Insert(2, "D");
+            try
+            {
+                car1.ChangeOwner(driver1, "o777oo"); 
+            }
+            catch (Exception exc)
+            {
+                
+                Console.WriteLine(exc.Message);
+            }
             
+            Console.WriteLine("Car number: "+ driver1.Car.CarNumber);
+            Console.WriteLine("Owner's name: " + car1.CarPassport.Owner.Name);
+            Console.WriteLine("Driver has experience of {0} years", driver1.Experience);
+
             Console.ReadKey();
         }
     }
