@@ -19,10 +19,9 @@ namespace Model
         {
             get
             {
-                var now = DateTime.Now;
-                var licensedate = LicenseDate;
-                Years = now.Year - licensedate.Year;
-                return Years;
+                TimeSpan timeSpan = DateTime.Now - LicenseDate;
+                var years = timeSpan.Days/365;
+                return years;
             }
           } 
         public string Name { get; }

@@ -20,7 +20,7 @@ namespace HomeWork2
                 Console.WriteLine("Impossible to show driver's name. " +
                                         "It hasn't been specified yet"); }
 
-            var driver1 = new Driver(new DateTime(2006, 1, 11), "Voldemar");
+            var driver1 = new Driver(new DateTime(2007, 1, 11), "Voldemar");
             driver1.Category = "BC";
             try
             {
