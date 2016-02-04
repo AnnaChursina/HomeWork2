@@ -32,7 +32,9 @@ namespace Model
             }
             else
             {
-                throw new Exception("Impossible to change the owner. Driver has no received category!");
+                ChangeOwnerException exc = new ChangeOwnerException("Impossible to change the owner. Driver has no received category!");
+                throw exc;
+                //throw new Exception("Impossible to change the owner. Driver has no received category!");
             }
         }
     }

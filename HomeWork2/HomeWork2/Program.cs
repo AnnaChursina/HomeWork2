@@ -36,10 +36,10 @@ namespace HomeWork2
             {
                 car1.ChangeOwner(driver1, "o777oo"); 
             }
-            catch (Exception exc)
+            catch (CategoryOfDriverException)
             {
                 
-                Console.WriteLine(exc.Message);
+                Console.WriteLine("Driver has no needed category to rule this car.");
             }
             
             Console.WriteLine("Car number: "+ driver1.Car.CarNumber);

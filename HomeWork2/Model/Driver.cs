@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Linq;
 
-
 namespace Model
 {
     public class Driver
@@ -14,8 +13,9 @@ namespace Model
             LicenseDate = licenceDate;
             Name = name;
         }
+
         // свойства
-        public int Experience 
+        public int Experience
         {
             get
             {
@@ -23,7 +23,8 @@ namespace Model
                 var years = timeSpan.Days/365;
                 return years;
             }
-          } 
+        }
+
         public string Name { get; }
         public DateTime LicenseDate { get; } // значение licenceDate передается св-ву в конструкторе
         public string Category { get; set; }
@@ -32,16 +33,16 @@ namespace Model
         // methode:
         public void OwnCar(Car car) // ссылка на объект
         {
-             //исключение:
+            //исключение:
             if (Category.Contains(car.Category)) // определяет, все ли элемены есть в списке
             {
-                Car = car; // должно ли быть автоматическое закрепление машины за водителем?
+                Car = car; 
             }
             else
             {
-                throw new Exception("Driver has no received category!");
+                CategoryOfDriverException exc = new CategoryOfDriverException("Driver has no needed category!");
+                throw exc;
             }
         }
     }
- 
 }
